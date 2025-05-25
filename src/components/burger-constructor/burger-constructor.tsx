@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "../../services/store/store";
 import {
 	createOrder,
 	resetOrderModalData,
-} from "../../services/slices/orderSlice";
+} from "../../services/slices/orderSlice/orderSlice";
 import { useNavigate } from "react-router-dom";
 
 export const BurgerConstructor: FC = () => {

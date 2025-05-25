@@ -22,9 +22,9 @@ import {
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch } from "../../services/store/store";
-import { fetchIngredients } from "../../services/slices/ingredientsSlice";
-import { resetOrderModalData } from "../../services/slices/orderSlice";
-import { checkUserAuth } from "../../services/slices/authSlice";
+import { fetchIngredients } from "../../services/slices/ingredientsSlice/ingredientsSlice";
+import { resetOrderModalData } from "../../services/slices/orderSlice/orderSlice";
+import { checkUserAuth } from "../../services/slices/authSlice/authSlice";
 
 const App = () => {
 	const dispatch = useDispatch();
@@ -34,7 +34,7 @@ const App = () => {
 
 	useEffect(() => {
 		dispatch(fetchIngredients());
-        dispatch(checkUserAuth());
+		dispatch(checkUserAuth());
 	}, [dispatch]);
 
 	const handleModalClose = () => {

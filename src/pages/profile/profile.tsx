@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "../../services/store/store";
 import { ProfileUI } from "@ui-pages";
 import { FC, SyntheticEvent, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { logout, updateUser } from "../../services/slices/authSlice";
+import { logout, updateUser } from "../../services/slices/authSlice/authSlice";
 import { TUser } from "@utils-types";
 
 export const Profile: FC = () => {

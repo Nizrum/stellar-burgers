@@ -47,7 +47,8 @@ export const LoginUI: FC<LoginUIProps> = ({
 						<Button
 							type="primary"
 							size="medium"
-							htmlType="submit">
+							htmlType="submit"
+							data-cy="login-button">
 							Войти
 						</Button>
 					</div>

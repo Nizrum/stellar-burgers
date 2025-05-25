@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "../../services/store/store";
 import { ProfileOrdersUI } from "@ui-pages";
 import { TOrder } from "@utils-types";
 import { FC, useEffect } from "react";
-import { fetchOrders } from "../../services/slices/orderSlice";
+import { fetchOrders } from "../../services/slices/orderSlice/orderSlice";
 
 export const ProfileOrders: FC = () => {
 	const dispatch = useDispatch();
